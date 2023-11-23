@@ -4,6 +4,7 @@ import NavbarUta from "./components/Navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
+import Estadias from "./Pages/Estadias";
 function App() {
   return (
     <div className="app">
@@ -15,6 +16,7 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="contact" element={<HomePage />} />
         <Route path="*" element={<HomePage />} />
+        <Route path="/Estadias" element= {Estadias} />
       </Routes>
     </div>
   );
