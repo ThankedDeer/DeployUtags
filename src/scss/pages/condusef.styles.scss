@@ -1,0 +1,45 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+
+.condusef {
+  &__wrapper {
+    margin-top: 80px;
+  }
+  &__hero {
+    background-image: linear-gradient(
+        129.53deg,
+        #86bf0be2 99.22%,
+        #00bd71ba 99.56%
+      ),
+      url("../../assets/images/condusef-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      text-align: center;
+      color: #fff;
+    }
+  }
+  &__content {
+    &_cta {
+      display: block;
+      background-color: $dark-green;
+      margin: 0 auto 1rem auto;
+      width: max-content;
+      font-family: $main-font;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 7px;
+      &:hover {
+        background-color: darken($dark-green, 5%);
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}

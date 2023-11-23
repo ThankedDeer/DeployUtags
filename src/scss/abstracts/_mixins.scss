@@ -1,0 +1,78 @@
+$xxs: (
+  min: 321px,
+);
+$xs: (
+  max: 769px,
+);
+$sm: (
+  min: 769px,
+);
+$md-up: (
+  min: 500px,
+);
+$md: (
+  min: 992px,
+);
+$md-down: (
+  max: 1200px,
+);
+$lg: (
+  min: 1366px,
+);
+$xl: (
+  min: 1900px,
+);
+$ipad-port: (
+  min: 768px,
+  max-h: 1024px,
+);
+$ipad-land: (
+  min: 1024px,
+  max-h: 768px,
+);
+$ipad-pro-port: (
+  min: 1024px,
+  max-h: 1366px,
+);
+$ipad-pro-land: (
+  min: 1366px,
+  max-h: 1024px,
+);
+$sm-only: (
+  min: map-get($sm, min),
+  max: map-get($md, min) - 1,
+);
+$md-only: (
+  min: map-get($md, min),
+  max: map-get($lg, min) - 1,
+);
+
+@mixin breakpoint($map) {
+  $query: "";
+  @if map-has-key($map, min) {
+    $query: append($query, "(min-width: #{map-get($map, min)})");
+  }
+  @if map-has-key($map, min) and map-has-key($map, max) {
+    $query: append($query, "and");
+  }
+  @if map-has-key($map, max) {
+    $query: append($query, "(max-width: #{map-get($map, max)})");
+  }
+  @media screen and #{$query} {
+    @content;
+  }
+}
+
+@mixin grid-layout(
+  $columns-desktop,
+  $measure-desktop,
+  $columns-mobile,
+  $measure-mobile
+) {
+  display: grid;
+  grid-template-columns: repeat($columns-desktop, $measure-desktop);
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat($columns-mobile, $measure-mobile);
+  }
+}

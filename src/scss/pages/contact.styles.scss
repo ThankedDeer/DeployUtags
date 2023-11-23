@@ -1,0 +1,349 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+
+.contact {
+  &__wrapper {
+    background-color: #fef9f1;
+    margin-top: 90px;
+    @media screen and (min-width: 992px) {
+      padding: 54px;
+    }
+    .hero {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 150px;
+      border-radius: 15px;
+      @include breakpoint($md) {
+        background-position: center;
+        height: 350px;
+      }
+    }
+  }
+  &__row2 {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+
+    @media screen and (min-width: 992px) {
+      grid-template-columns: 67% 1fr;
+      gap: 10px;
+      margin-top: 33px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      grid-template-columns: 70% 1fr;
+      margin-top: 33px;
+    }
+  }
+}
+.contactCardContainer {
+  position: sticky;
+  top: 100px;
+}
+.banner {
+  border-radius: 8px;
+  padding: 1.5rem;
+  //   text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  @include breakpoint($md) {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  h6,
+  p {
+    text-align: center;
+  }
+  h6 {
+    font-weight: bolder;
+  }
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+    @include breakpoint($md) {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__quote {
+    background-color: $light-green;
+
+    a {
+      text-align: center;
+      padding: 8px;
+      border-radius: 10px;
+      background-color: #82bd02;
+      display: flex;
+      justify-content: flex-start;
+      color: #000;
+      text-decoration: none;
+      font-family: $main-font;
+      align-items: center;
+      font-weight: bolder;
+      @include breakpoint($ipad-port) {
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        margin-right: 5px;
+        width: max-content;
+        @include breakpoint($md) {
+          // margin-right: 1rem;
+        }
+      }
+      span {
+        display: block;
+        // font-size: 0.9rem;
+        // margin-left: 10px;
+        // width: 90%;
+      }
+    }
+  }
+  &__general {
+    background-color: white;
+    margin-top: 1rem;
+    padding: 0;
+    border-top-right-radius: 22px;
+    border-top-left-radius: 22px;
+
+    & div:last-child {
+      padding: 10px;
+      & > h6 {
+        margin-top: 10px;
+        text-align: center;
+        padding: 7px;
+        font-family: $secondary-font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        border-radius: 19px;
+        background-color: #f4f4f4;
+
+        @include breakpoint($md) {
+          padding-left: 0;
+          font-size: 15px;
+          text-align: start;
+        }
+        @include breakpoint($lg) {
+          font-size: 17px;
+        }
+
+        span {
+          text-align: center;
+          display: block;
+          font-family: $secondary-font;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          margin: 0 auto;
+          background-color: #00a45d;
+          color: white;
+          padding: 7px;
+          border-radius: 19px;
+          @include breakpoint($md) {
+            text-align: start;
+            display: inline;
+            font-size: 15px;
+            margin-right: 4px;
+          }
+          @include breakpoint($lg) {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    &__header {
+      display: flex;
+      gap: 15px;
+      background-color: #51dc01;
+      padding: 18px;
+      border-radius: 22px;
+      @include breakpoint($xs) {
+        gap: 4px;
+      }
+      @include breakpoint($ipad-port) {
+        justify-content: center;
+        align-items: center;
+      }
+      @include breakpoint($md) {
+        gap: 15px;
+      }
+
+      h6 {
+        font-family: $main-font;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 23px;
+        text-align: start;
+        @include breakpoint($xs) {
+          text-align: center;
+        }
+
+        @include breakpoint($md) {
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+.form {
+  background-color: white;
+  width: 100%;
+  height: max-content;
+  display: block;
+  margin: 0 auto;
+  border-top-right-radius: 31px;
+  border-top-left-radius: 31px;
+  @include breakpoint($md) {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  @include breakpoint($md) {
+    width: 100%;
+  }
+  // @include breakpoint($lg) {
+  //   width: 961px;
+  // }
+
+  &__Background {
+    position: relative;
+    text-align: center;
+    padding: 40px 30px;
+    @include breakpoint($md) {
+      padding: 2rem 5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    &_tittle {
+      position: relative;
+      z-index: 999;
+      font-family: $main-font;
+      font-size: 25px;
+      font-weight: 600;
+      @include breakpoint($md) {
+        font-size: 50px;
+        line-height: 56px;
+        text-align: center;
+      }
+    }
+
+    &_subtitle {
+      position: relative;
+      z-index: 999;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $secondary-font;
+      line-height: 27px;
+      text-align: center;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      opacity: 0.13271368;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(130deg, #86bf0b 0%, #00bd72 100%);
+      background-blend-mode: normal;
+      filter: blur(20px);
+
+      @include breakpoint($md) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0 1rem;
+    @include breakpoint($ipad-port) {
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint($md) {
+      gap: 0;
+      grid-template-columns: repeat(2, 1fr);
+      & > * {
+        margin: 10px;
+        margin-top: 0px;
+      }
+    }
+    @include breakpoint($md) {
+      grid-template-columns: repeat(2, 1fr);
+      & > * {
+        margin: 30px;
+        margin-top: 0px;
+      }
+    }
+
+    label {
+      font-family: $main-font;
+      font-size: 16px;
+      height: 21px;
+      font-weight: 500;
+      letter-spacing: 0.42857143px;
+      @include breakpoint($md) {
+        font-size: 18px;
+      }
+    }
+    input,
+    select,
+    textarea {
+      background-color: #fbf9f6;
+    }
+    button {
+      background-color: $dark-green;
+      color: white;
+      font-family: $main-font;
+      font-size: 18px;
+      padding: 15px 0;
+      border-radius: 10px;
+      border: none;
+
+      @include breakpoint($ipad-port) {
+        margin-top: 20px;
+      }
+      @include breakpoint($md) {
+        margin-top: 10px;
+      }
+      &:hover {
+        background-color: white;
+        color: $dark-green;
+        border: solid 2px $dark-green;
+      }
+    }
+  }
+}
+
+.textArea {
+  //   @include breakpoint($ipad-port) {
+  //   }
+  //   @include breakpoint($md-up) {
+  //     grid-column: span 2;
+  //   }
+  @include breakpoint($md) {
+    grid-column: span 2;
+  }
+}
+.submitButton {
+  @include breakpoint($ipad-port) {
+  }
+  //   @include breakpoint($md-up) {
+  //     grid-column-start: 6;
+  //     grid-column: span 2;
+  //   }
+  @include breakpoint($md) {
+    grid-column-start: 6;
+    grid-column: span 2;
+  }
+}

@@ -1,0 +1,232 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+
+.nav-pills .nav-link {
+  color: black;
+  background-color: #eae5db;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #3c3b3b;
+}
+
+.nav-pills {
+  margin: 1rem 0 2rem 0;
+  /* width: 100%;
+      max-width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .nav-pills {
+    margin: 40px 0;
+    gap: 1rem;
+  }
+}
+.markets-name {
+  color: #747474;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about {
+  margin-top: 90px;
+  @include breakpoint($md) {
+    padding: 55px;
+    height: max-content;
+    padding-bottom: 0;
+    margin-top: 30px;
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    @include breakpoint($md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__container {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &_img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 19px;
+        height: 250px;
+        @include breakpoint($md) {
+          // height: 330px;
+          height: 90%;
+          width: auto;
+        }
+        @include breakpoint($xl) {
+          height: 80%;
+          width: auto;
+        }
+      }
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &_name {
+        font-family: $main-font;
+        font-size: 15px;
+        color: #747474;
+        font-weight: 600;
+        display: block;
+        max-width: 100%;
+        @include breakpoint($md) {
+          font-size: 18px;
+        }
+      }
+      &_title {
+        display: block;
+        height: max-content;
+        font-family: $secondary-font;
+        font-weight: 600;
+        max-width: 100%;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        text-align: justify;
+        @include breakpoint($lg) {
+          font-size: 1.4rem;
+          // width: 642px;
+          width: 90%;
+          // height: 124.42px;
+        }
+        @include breakpoint($xl) {
+          font-size: 1.6rem;
+        }
+      }
+      &_button {
+        display: block;
+        text-align: center;
+        margin-top: 17px;
+        color: white;
+        font-size: 16px;
+        background-color: $dark-green;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: 13px 34px;
+        text-decoration: none;
+        border-radius: 5px;
+
+        @include breakpoint($md) {
+          margin-top: 38.5px;
+          width: max-content;
+          &:hover {
+            color: $dark-green;
+            background-color: white;
+            border: solid $dark-green 3px;
+          }
+        }
+
+        &:hover {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.marketsClass {
+  background-color: #fef9f1;
+
+  @include breakpoint($md) {
+    margin-top: -3rem;
+  }
+  &_name {
+    color: #747474;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 4rem;
+    @include breakpoint($md) {
+      padding-top: 1rem;
+    }
+  }
+}
+
+.container_fluid_about {
+  padding-bottom: 40px;
+  padding-top: 25px;
+  @include breakpoint($md) {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+}
+
+.nav_pills {
+  // box-sizing: border-box;
+  // display: inline-block;
+  // width: 100%;
+  // flex-wrap: wrap;
+  // & > * {
+  //   flex: 2;
+  // // }
+  // display: grid !important;
+  // grid-template-columns: repeat(4, 1fr) !important;
+  // gap: 1rem;
+  // justify-content: center;
+  li {
+    width: 100%;
+    @include breakpoint($md) {
+      width: calc(30% - 10px);
+    }
+    button {
+      display: flex;
+      flex-direction: row;
+      img {
+        height: 25px !important;
+      }
+    }
+  }
+}
+.button {
+  border-radius: 29px !important;
+  padding: 15px;
+  max-width: max-content;
+  width: 100%;
+  max-width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+
+  @include breakpoint($md) {
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    // justify-content: center;
+  }
+
+  &_text {
+    display: block;
+    font-family: $main-font;
+    font-size: 1rem;
+    font-weight: 500;
+    // line-height: 27px;
+    // text-transform: capitalize;
+    margin: 0;
+    @include breakpoint($lg) {
+      width: 82%;
+    }
+  }
+  &_img {
+    margin-right: 6px;
+  }
+}

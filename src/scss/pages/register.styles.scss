@@ -1,0 +1,63 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+
+.register {
+  &__wrapper {
+    background-color: #f5f4f2;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    @include breakpoint($md) {
+      padding: 2rem 0;
+      min-height: 60vh;
+    }
+  }
+  &__container {
+    background-color: #fff;
+    border-top: 6px solid #000;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    @include breakpoint($md) {
+      padding: 2.1rem;
+      width: 55%;
+    }
+    h3,
+    p {
+      @include breakpoint($md-down) {
+        text-align: center;
+      }
+    }
+    form {
+      margin-top: 0.5rem;
+      @include breakpoint($md-down) {
+        margin-top: 1rem;
+      }
+    }
+    a {
+      color: #000;
+    }
+    label {
+      font-weight: bolder;
+    }
+    input {
+      &:not([type="checkbox"]) {
+        display: flex;
+        background-color: #fbfbfb;
+        border: 1px solid #dad8d8;
+        border-radius: 0;
+        padding: 0.8rem 0.6rem;
+      }
+    }
+    button {
+      background-color: #000;
+      border: 0;
+      color: #fff;
+      font-size: 1.1rem;
+      padding: 1rem 0;
+      margin: 1rem 0;
+      width: 100%;
+      position: relative;
+      z-index: 999;
+    }
+  }
+}

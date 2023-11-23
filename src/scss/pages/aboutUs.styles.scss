@@ -1,0 +1,167 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+
+.about_us {
+  p {
+    margin-bottom: 0;
+  }
+  &__wrapper {
+    background-color: #fff;
+    margin-top: 80px;
+    // padding: 2rem 0 0 0;
+    overflow-x: hidden;
+    @include breakpoint($md) {
+      margin-top: 90px;
+    }
+  }
+  &__hero {
+    background-color: #fbfbfb;
+    padding: 3rem 0;
+    @include breakpoint($md) {
+      padding: 5rem 0;
+    }
+    h4,
+    p {
+      color: #000;
+      text-align: center;
+    }
+    h4 {
+      margin-bottom: 1rem;
+      @include breakpoint($md) {
+        font-size: 2.1rem;
+      }
+    }
+    p {
+      position: relative;
+      &::before {
+        content: "";
+        background-image: url("../../assets/images/quote.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 35px;
+        z-index: 9;
+        transform: rotate(180deg);
+        @include breakpoint($md) {
+          height: 21px;
+          width: 40px;
+          left: -1rem;
+        }
+        @include breakpoint($lg) {
+          left: -3rem;
+        }
+      }
+      &::after {
+        content: "";
+        background-image: url("../../assets/images/quote.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        right: 3rem;
+        height: 16px;
+        width: 35px;
+        z-index: 9;
+        // transform: rotate(180deg);
+        @include breakpoint($md) {
+          height: 21px;
+          width: 40px;
+          right: 0.3rem;
+        }
+        @include breakpoint($lg) {
+          right: 5%;
+        }
+      }
+      span {
+        color: $dark-green;
+      }
+      margin: 0 auto;
+      @include breakpoint($md) {
+        width: 80%;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  &__team {
+    &__hero {
+      background-color: $dark-green;
+      padding: 2rem 0;
+      @include breakpoint($md) {
+        padding: 3rem 0;
+      }
+      h4 {
+        margin-bottom: 1rem;
+        @include breakpoint($md) {
+          font-size: 1.8rem;
+        }
+      }
+      p {
+        margin-bottom: 0;
+      }
+      h4,
+      p {
+        color: #fff;
+      }
+      p {
+        @include breakpoint($md) {
+          // width: 80%;
+          // margin: 0 auto;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      // gap: 0.5rem;
+      padding: 2rem 0;
+      @include breakpoint($md) {
+        grid-template-columns: repeat(9, 1fr);
+      }
+    }
+    &__card {
+      height: 150px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @include breakpoint($md) {
+        height: 200px;
+      }
+      &::before {
+        content: "";
+        background-color: $dark-green;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+        transition: all 0.2s ease;
+      }
+      &:hover {
+        cursor: pointer;
+        &::before {
+          opacity: 0.5;
+        }
+        h6 {
+          opacity: 1;
+        }
+      }
+      h6 {
+        position: relative;
+        z-index: 6;
+        font-size: 1rem;
+        color: #000;
+        opacity: 0;
+        transition: all 0.2s ease;
+        text-align: center;
+        @include breakpoint($md) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

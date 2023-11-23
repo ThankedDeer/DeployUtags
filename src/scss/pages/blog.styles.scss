@@ -1,0 +1,157 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+nav {
+  display: block !important;
+}
+
+.hero__secondary {
+  &__wrapper {
+    padding: 1rem 0;
+    margin-top: 90px;
+  }
+  &__container {
+    // background-image: linear-gradient(
+    //     90deg,
+    //     rgba(56, 163, 2, 0.58) 31%,
+    //     rgba(210, 210, 210, 0) 70%
+    //   ),
+    //   url("/static/images/articles__hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    @include breakpoint($md) {
+      height: 290px;
+      padding: 0 3rem;
+    }
+    h2,
+    p {
+      color: #fff;
+    }
+    h2 {
+      margin-bottom: 0.5rem;
+      @include breakpoint($md) {
+        font-size: 2.5rem;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      max-width: 95%;
+      @include breakpoint($md) {
+        font-size: 1rem;
+        max-width: 45%;
+      }
+    }
+  }
+}
+
+.articles {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    // margin-bottom: 1.5rem;
+    padding-bottom: 2rem;
+    @include breakpoint($md) {
+      grid-template-columns: 30% 1fr;
+      gap: 1.5rem;
+    }
+
+    &__filters {
+      //   border: 1px solid red;
+    }
+    &__cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-columns: auto;
+      gap: 1rem;
+      width: 100%;
+      max-width: 100%;
+      @include breakpoint($md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../../assets/images/arrow-down-e.svg") !important;
+}
+.accordion .collapse {
+  display: none;
+}
+
+/* Show the first accordion item by default on mobile */
+.accordion-item:first-child .collapse {
+  display: block;
+}
+.filters {
+  &__heading {
+    background-color: $dark !important;
+    padding: 1rem 1.5rem;
+    p {
+      color: #fff;
+      font-family: $main-font;
+      font-weight: bolder;
+      margin-bottom: 0;
+      letter-spacing: 1.5px;
+    }
+    &:not(.collapsed)::after {
+      background-image: url("../../assets/images/arrow-down-e.svg") !important;
+    }
+  }
+
+  .custom__accordion {
+    border-radius: 22px;
+    overflow: hidden;
+    @include breakpoint($md) {
+      border: 1px solid $dark;
+    }
+
+    &__body {
+      padding: 0 !important;
+      ul {
+        border-radius: 0;
+        li {
+          border-right: 0;
+          border-left: 0;
+          label {
+            font-weight: bolder;
+          }
+        }
+        .custom-checkbox {
+          position: relative;
+        }
+        [type="checkbox"] {
+          position: absolute;
+          opacity: 0;
+          pointer-events: none;
+          & + label::before {
+            content: "";
+            position: absolute;
+            left: 0.6rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            border: 2px solid #8f8f9d;
+            border-radius: 3px;
+          }
+          &:checked + label::before {
+            content: url("../../assets/images/check.svg");
+            background: $dark-green;
+            border-color: $dark-green;
+            line-height: 11px;
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+}

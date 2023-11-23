@@ -1,0 +1,185 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+
+.article {
+  &__wrapper {
+    margin-top: 90px;
+    padding: 2rem 0 0 0;
+    // overflow-x: hidden;
+  }
+  &__hero {
+    &__container {
+      position: relative;
+      &::before {
+        content: "";
+        background-image: url("../../assets/images/bullets-article--mobile.svg");
+        position: absolute;
+        top: -1.4rem;
+        right: 1rem;
+        height: 140px;
+        width: 73px;
+        z-index: -1;
+        opacity: 0.6;
+        @include breakpoint($md) {
+          background-image: url("../../assets/images/bullets-article.svg");
+          top: 5%;
+          right: 0;
+          left: -2rem;
+          height: 208px;
+          width: 107px;
+          opacity: 1;
+        }
+      }
+    }
+    h1,
+    p {
+      @include breakpoint($md) {
+        max-width: 90%;
+      }
+    }
+    h1 {
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      @include breakpoint($md) {
+        max-width: 90%;
+      }
+    }
+    p {
+      color: #808080;
+      font-size: 0.9rem;
+      @include breakpoint($md) {
+        font-size: 1rem;
+      }
+    }
+    &__media {
+      img {
+        height: auto !important;
+        width: 100% !important;
+      }
+    }
+  }
+  &__body {
+    background-color: $body-background;
+    padding: 2rem 0;
+    margin-top: -1rem;
+    @include breakpoint($md) {
+      padding: 3rem 0;
+      margin-top: -2rem;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      p {
+        font-family: $main-font;
+        color: #535353;
+        margin-bottom: 0;
+        width: 42%;
+        font-size: 0.8rem;
+        @include breakpoint($md) {
+          font-size: 1rem;
+          width: 20%;
+        }
+      }
+      &__line {
+        height: 1px;
+        background-color: #d6d6d6;
+        width: 92%;
+      }
+    }
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-top: 1rem;
+      gap: 1.5rem;
+      @include breakpoint($ipad-land) {
+        grid-template-columns: 25% 1fr;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      &__banners {
+        @include breakpoint($xs) {
+          grid-row: 2;
+        }
+        .banner {
+          border-radius: 8px;
+          padding: 1.5rem;
+          //   text-align: center;
+          width: 90%;
+          margin: 0 auto;
+          @include breakpoint($md) {
+            width: 100%;
+          }
+
+          h6,
+          p {
+            text-align: center;
+          }
+          h6 {
+            font-weight: bolder;
+          }
+          p {
+            margin-top: 0.5rem;
+            margin-bottom: 0.4rem;
+            @include breakpoint($md) {
+              font-size: 0.9rem;
+            }
+          }
+          &__quote {
+            background-color: $light-green;
+            position: sticky;
+            top: 80px;
+            @include breakpoint($md) {
+              top: 100px;
+            }
+            a {
+              display: flex;
+              justify-content: flex-start;
+              color: #000;
+              text-decoration: none;
+              font-family: $main-font;
+              align-items: center;
+              font-weight: bolder;
+              img {
+                margin-right: 0.5rem;
+              }
+            }
+          }
+          &__general {
+            background-color: #51dc01;
+            margin-top: 1rem;
+          }
+        }
+      }
+      &__content {
+        @include breakpoint($xs) {
+          grid-row: 1;
+        }
+        h6 {
+          color: $dark-green;
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          margin-bottom: 0;
+          text-align: justify;
+          font-size: 0.95rem;
+          @include breakpoint($md) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  &__main__media {
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    @include breakpoint($md) {
+      height: 350px;
+    }
+  }
+}
