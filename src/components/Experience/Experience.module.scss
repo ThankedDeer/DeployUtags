@@ -1,0 +1,141 @@
+@import "../../../scss/abstracts/mixins";
+@import "../../../scss/abstracts/variables";
+
+/*
+experience,
+experience__grid,
+experience__grid__images,
+experience__grid__content,
+experience__grid__images_img1,
+*/
+
+.experience {
+  height: 100%;
+  margin-bottom: 10rem;
+  display: block;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @include breakpoint($md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__experience {
+      position: absolute;
+      background-color: $blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      border-radius: 15px;
+      color: white;
+      font-weight: 500;
+      gap: 0.5rem;
+      right: 5%;
+      top: 60%;
+      width: 120px;
+      @include breakpoint($xxs) {
+        right: 18%;
+      }
+      @include breakpoint($md) {
+        gap: 0rem;
+        right: 20%;
+        top: 78%;
+        width: 180px;
+      }
+      & > * {
+        text-align: center;
+        font-size: 10px;
+        text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000,
+          1px -1px 0 #000;
+          @include breakpoint($md) {
+            font-size: 16px;
+          }
+      }
+      :first-child {
+        font-size: 15px !important;
+        @include breakpoint($md) {
+            font-size: 25px !important;
+          }
+      }
+    }
+
+    &__images {
+      position: relative;
+      height: 60vh;
+
+      &_flecha1 {
+        position: absolute;
+        left: 10%;
+        top: 260px;
+        z-index: 9999;
+        @include breakpoint($md) {
+          left: -1%;
+          top: 330px;
+          width: 350px;
+          height: 200px;
+          transform: rotate(-7deg);
+        }
+      }
+      &_flecha2 {
+        z-index: 4;
+        position: absolute;
+        top: 200px;
+        right: 5%;
+        @include breakpoint($md) {
+          right: 8%;
+          top: 270px;
+          width: 250px;
+          height: 150px;
+          transform: rotate(-10deg);
+        }
+      }
+      &_img1 {
+        position: absolute;
+        background-image: url("/imagenes/estudiantes.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        width: 141px;
+        height: 211px;
+        left: 15%;
+        top: 90px;
+        transform: rotate(-15deg);
+        @include breakpoint($md) {
+          width: 220px;
+          height: 320px;
+          left: 13%;
+          transform: rotate(-12deg);
+        }
+        @include breakpoint($lg) {
+            width: 282px;
+            height: 422px;
+          }
+      }
+      &_img2 {
+        position: absolute;
+        background-image: url("/imagenes/rector.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        width: 115px;
+        height: 150px;
+        left: 55%;
+        top: 80px;
+        @include breakpoint($md) {
+          width: 170px;
+          height: 220px;
+          left: 52%;
+        }
+
+        @include breakpoint($lg) {
+           
+           top: 100px;
+           left: 45%;
+        }
+      }
+    }
+  }
+}
