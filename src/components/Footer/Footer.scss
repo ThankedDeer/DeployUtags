@@ -1,0 +1,134 @@
+@import "../../../scss/abstracts/mixins";
+@import "../../../scss/abstracts/variables";
+
+.footer {
+    border-top: 12px solid $blue;
+    // margin-top: 80px;
+    background-color: #000;
+  
+    @include breakpoint($md-down) {
+      padding: 0 1rem;
+    }
+  
+    &__main-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background-color: black;
+      padding: 3rem 0 1rem 0;
+      color: #ffffff;
+      @include breakpoint($md) {
+        grid-template-columns: 450px repeat(4, 220px);
+        gap: 1rem;
+        padding: 3rem;
+      }
+      @include breakpoint($xl) {
+        grid-template-columns: 500px repeat(4, 1fr);
+      }
+      &--info {
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          display: block;
+          &:not(:first-child) {
+            margin-top: 1rem;
+          }
+        }
+        // &:first-child() {
+        //   @include breakpoint($md) {
+        //     grid-column-end: span 2;
+        //     width: 100%;
+        //   }
+        // }
+        &:nth-child(1) {
+          @include breakpoint($md-down) {
+            grid-row-start: 1;
+            grid-column-end: span 2;
+            width: 100%;
+          }
+        }
+        &:nth-child(4) {
+          @include breakpoint($xs) {
+            grid-row-start: 3;
+            grid-column-end: span 2;
+            width: 100%;
+          }
+        }
+      }
+    }
+    &-info {
+      max-width: 250px;
+      font-size: 1rem;
+      &-start {
+        @include breakpoint($md) {
+          margin-bottom: 0;
+          width: 90%;
+        }
+      }
+    }
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      position: relative;
+      &::after {
+        content: "";
+        background-color: $blue;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 5px;
+        width: 50px;
+        @include breakpoint($md) {
+          height: 4px;
+          bottom: -5px;
+        }
+      }
+    }
+    &-logo {
+      padding-bottom: 20px;
+      width: 50%;
+    }
+    &__bottom {
+      display: flex;
+      border-top: 1px solid #484848;
+      justify-content: unset;
+      flex-direction: column;
+      padding: 0;
+      @include breakpoint($md) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+      @include breakpoint($lg) {
+        padding: 1rem 3rem;
+      }
+      p {
+        color: #ffffff;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  .circle-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .icon {
+    display: block;
+    margin: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .footer-location {
+    position: absolute;
+  }
+  
+  .footer-loc {
+    display: block;
+    margin-left: 35px;
+  }
+  
