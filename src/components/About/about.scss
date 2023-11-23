@@ -5,6 +5,10 @@
 
 .about {
   height: max-content;
+  margin-top: 5rem;
+  @include breakpoint($md) {
+    margin-top: 4rem;
+  }
   &__grid {
     padding-top: 0;
     display: grid;

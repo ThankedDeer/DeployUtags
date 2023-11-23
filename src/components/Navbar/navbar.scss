@@ -1,0 +1,18 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+
+.icono {
+  height: 40px;
+  @include breakpoint($md) {
+    height: 80px;
+  }
+}
+
+#navbarCustom {
+  display: flex !important;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
