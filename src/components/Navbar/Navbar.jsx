@@ -20,12 +20,16 @@ export default function NavbarUta() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav style={{ maxHeight: "100px" }} navbarScroll>
-            <Nav.Link href="#action1">Inicio</Nav.Link>
-            <Nav.Link href="#action2">Universidad</Nav.Link>
-            <Nav.Link href="#action2">Oferta Educativa</Nav.Link>
-            <Nav.Link href="#action2">Becas</Nav.Link>
-            <Nav.Link href="#action2">Vinculación</Nav.Link>
+            <Nav.Link href="*">Inicio</Nav.Link>
+            <Nav.Link href="/bolsa">Bolsa de trabajo</Nav.Link>
+            <Nav.Link href="/vacantes">Vacantes</Nav.Link>
+            <Nav.Link href="/Inter">Internacionalizacion</Nav.Link>
+            <Nav.Link href="/Exito">Historias de exito</Nav.Link>
             <Nav.Link href="#action2">Admisiones</Nav.Link>
+            <Nav.Link href="#action2">TSU</Nav.Link>
+            <Nav.Link href="#action2">Estadias</Nav.Link>
+            <Nav.Link href="#action2">Becas</Nav.Link>
+            <Nav.Link href="https://www.utags.edu.mx/images/Archivos/Croquis/CROQUIS-UTA.pdf">Vida en el campus</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
