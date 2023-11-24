@@ -14,9 +14,9 @@ export default function Footer() {
         <div className="footer__main-content--info">
           <p className="footer-title">Enlaces</p>
           <a href="/">Inicio</a>
-          <a href="/TSU">Carreras</a>
-          <a href="/Becas">Becas</a>
-          <a href="/Estadias">Estadias</a>
+          <a href="/tsu">Carreras</a>
+          <a href="/becas">Becas</a>
+          <a href="/estadias">Estadias</a>
           {/* Agrega otros enlaces relevantes de la universidad */}
         </div>
         <div className="footer__main-content--info">

@@ -26,13 +26,10 @@ function App() {
         <Route path="/exito" element={<Exito/>} />
         <Route path="/inter" element={<Inter/>} />
         <Route path="/vacantes" element={<Vacantes/>} />
-<<<<<<< HEAD
         <Route path="/estadias" element={<Estadias/>} />
         <Route path="/admisiones" element={<Admisiones/>} />
-=======
-        <Route path="/tsu" element={<TSU/>} />
         <Route path="/becas" element={<Becas/>} />
->>>>>>> acce20aeb5a804e785eabddd7920c44d901e76c2
+        <Route path="/tsu" element={<TSU/>} />
       </Routes>
 
       <footer>

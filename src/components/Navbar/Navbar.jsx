@@ -18,7 +18,7 @@ export default function NavbarUta() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav style={{ maxHeight: "100px" }} navbarScroll>
-            <Nav.Link href="*">Inicio</Nav.Link>
+            <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/bolsa">Bolsa de trabajo</Nav.Link>
             <Nav.Link href="/vacantes">Vacantes</Nav.Link>
             <Nav.Link href="/Inter">Internacionalizacion</Nav.Link>
