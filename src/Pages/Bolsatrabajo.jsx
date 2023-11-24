@@ -4,7 +4,7 @@ import "./Bolsatrabajo.css";
 
 export default function Bolsa() {
 return (
-    <div>
+    <div><br /><br /><br /><br /><br /><br />
         <section id="intro">
             <h4>Bienvenidos</h4>
             <h1>Bolsa de Trabajo y Seguimiento de Egresados</h1>

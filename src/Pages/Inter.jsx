@@ -3,7 +3,7 @@ import "./inter.css";
 
 export default function Interna(){
     return (
-        <div>
+        <div> <br /><br /><br /><br /><br /><br />
             <section id='titulo'>
                 <p>
                     <span class="primer-texto">Información sobre <br /></span>

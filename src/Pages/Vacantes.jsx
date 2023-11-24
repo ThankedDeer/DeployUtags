@@ -3,7 +3,7 @@ import "./vacantes.css";
 
 export default function vacantes (){
     return(
-        <div>
+        <div> <br /><br /><br /><br /><br /><br />
         <section id="intro">
             <h4>Vacantes</h4>
             <h1>Bolsa de Trabajo</h1>

@@ -6,6 +6,7 @@ import Exito from "./Pages/exito";
 import Inter from "./Pages/Inter";
 import Vacantes from "./Pages/Vacantes";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Estadias from "./Pages/Estadias";
@@ -14,7 +15,6 @@ function App() {
   return (
     <div className="app">
       <header>
-        {/* <SocialMedia /> */}
         <NavbarUta />
       </header>
       <Routes>
@@ -28,6 +28,10 @@ function App() {
         <Route path="/estadias" element={<Estadias/>} />
         <Route path="/admisiones" element={<Admisiones/>} />
       </Routes>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

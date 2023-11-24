@@ -3,7 +3,7 @@ import "./exito.css";
 
 export default function exito (){
     return(
-        <div>
+        <div> <br /><br /><br /><br /><br /><br />
         <section id="intro">
             <h5>Trayectoria de Nuestros Egresados</h5>
             <h1>Historias de Éxito</h1>
