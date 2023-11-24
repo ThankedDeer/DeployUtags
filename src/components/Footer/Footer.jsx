@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.scss";
 
 export default function Footer() {
   return (
@@ -34,12 +35,6 @@ export default function Footer() {
           <a href="tel:+123456789" className="footer-info">
             Teléfono: +123456789
           </a>
-        </div>
-        <div className="footer__mainContent--info mt-3 mt-lg-0">
-          <p className="footer-title">Redes Sociales</p>
-          <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank">Facebook</a>
-          <a href="https://twitter.com/TuCuentaDeTwitter" target="_blank">Twitter</a>
-          {/* Agrega otros enlaces a las redes sociales de la universidad */}
         </div>
       </div>
     </footer>

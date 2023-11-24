@@ -3,7 +3,6 @@ import "./navbar.scss";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import SocialMedia from "../SocialMedia/SocialMedia";
 export default function NavbarUta() {
   return (
     <Navbar
@@ -12,7 +11,6 @@ export default function NavbarUta() {
       className="bg-body-tertiary "
       id="navbarCustom"
     >
-      <SocialMedia />
       <Container fluid>
         <Navbar.Brand href="/">
           <img className="icono" src="/imagenes/2.webp" alt="icono" />

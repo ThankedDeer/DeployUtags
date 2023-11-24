@@ -6,13 +6,12 @@ import Exito from "./Pages/exito";
 import Inter from "./Pages/Inter";
 import Vacantes from "./Pages/Vacantes";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
-import SocialMedia from "./components/SocialMedia/SocialMedia";
 function App() {
   return (
     <div className="app">
       <header>
-        {/* <SocialMedia /> */}
         <NavbarUta />
       </header>
       <Routes>
@@ -24,6 +23,10 @@ function App() {
         <Route path="/inter" element={<Inter/>} />
         <Route path="/vacantes" element={<Vacantes/>} />
       </Routes>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
