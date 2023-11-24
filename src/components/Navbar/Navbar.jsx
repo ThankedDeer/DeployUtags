@@ -23,10 +23,10 @@ export default function NavbarUta() {
             <Nav.Link href="/vacantes">Vacantes</Nav.Link>
             <Nav.Link href="/Inter">Internacionalizacion</Nav.Link>
             <Nav.Link href="/Exito">Historias de exito</Nav.Link>
-            <Nav.Link href="#action2">Admisiones</Nav.Link>
-            <Nav.Link href="#action2">TSU</Nav.Link>
-            <Nav.Link href="#action2">Estadias</Nav.Link>
-            <Nav.Link href="#action2">Becas</Nav.Link>
+            <Nav.Link href="/admisiones">Admisiones</Nav.Link>
+            <Nav.Link href="/tsu">TSU</Nav.Link>
+            <Nav.Link href="/estadias">Estadias</Nav.Link>
+            <Nav.Link href="/becas">Becas</Nav.Link>
             <Nav.Link href="https://www.utags.edu.mx/images/Archivos/Croquis/CROQUIS-UTA.pdf">Vida en el campus</Nav.Link>
           </Nav>
         </Navbar.Collapse>
