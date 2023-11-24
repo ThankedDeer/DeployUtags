@@ -1,0 +1,183 @@
+
+#titulo{
+    background-color: #0C4681; 
+    padding: 20px;
+    p{
+        margin-left: 150px;
+    }
+    .primer-texto {
+        font-size: 25px; 
+        color: rgb(255, 255, 255); 
+    }
+    }
+    .segundo-texto {
+        font-size: 50px;
+        color: rgb(255, 255, 255); 
+    }
+    
+
+#titulo-uno{
+    font-size: 20px;
+    margin-left: 150px;
+}
+#titulo-dos{
+    font-size: 55px;
+    margin-left: 150px;
+}
+#titulo-tres{
+    font-size: 55px;
+    margin-left: 150px;
+}
+#texto-info{
+    margin-left: 150px;
+    margin-right: 800px;
+    text-align: justify;
+}
+#texto2-info{
+    margin-left: 150px;
+    margin-right: 100px;
+    text-align: justify;
+}
+#texto3-info{
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
+}
+#lista-info {
+    li {
+      margin-left: 200px;
+    }
+  }
+
+#img-estudiantes{
+    width: 300px;
+    margin-left: 1000px;
+    margin-top: -300px;
+}
+#info {
+    background-image: url('/public/imagenes/estadias.webp');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+  }
+#encabezado{
+    height: 50px;
+    justify-content: center;
+}
+#colegio{
+    width: 90px;
+}
+#graduacion{
+    width: 90px;
+}
+#fabrica{
+    width: 90px;
+}
+#info-estadias{
+    display: flex;
+}
+#info-estadias img{
+    margin-left: 320px;
+    margin-top: 30px;
+}
+#titulo-colegio{
+    text-align: center;
+    margin-left: 100px;
+}
+#titu-colegio{
+    margin-left: 210px;
+    text-align: center;
+}
+#titu-graduacion{
+    margin-left: 120px;
+    text-align: center;
+}
+#titu-fabrica{
+    margin-left: 120px;
+    text-align: center;
+}
+#titulo-iconos{
+    display: flex;
+    margin-top: 10px;
+}
+#listas-info{
+    display: flex;
+    margin-top: 10px;
+}
+#lista-universidad{
+    margin-left: 180px;
+    text-align: justify;
+}
+#lista-graduacion{
+    margin-left: 70px;
+    text-align: justify;
+}
+#lista-empresa{
+    margin-left: 70px;
+    text-align: justify;
+}
+.lista-acomodada {
+    display: flex;
+}
+
+.lista-acomodada ul {
+    width: 350px;
+    margin: 0px;
+    padding: 0px;
+}
+#texto-final{
+    margin-left: 130px;
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    width: 1250px;
+    justify-content: center;
+}
+#fondo-final{
+    background-image: url('/public/imagenes/becas_en-ab.webp');
+    background-size: cover;
+    background-attachment: fixed; 
+}
+#titulo-img {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 15px;
+}
+#fondo-final img{
+    width: 85px;
+    margin-left: 320px;
+    margin-top: 100px;
+}
+#texto1{
+    color: #fff;
+    margin-left: 240px;
+    font-size: 16px;
+    text-decoration: none;
+}
+#texto2{
+    color: #fff;
+    margin-top: -40px;
+    margin-left: 690px;
+    font-size: 16px;
+}
+#texto3{
+    color: #fff;
+    margin-top: -40px;
+    margin-left: 1105px;
+    font-size: 16px;
+}
+
+#fondo-final a{
+    text-decoration: none;
+    color: #fff;
+}
+#titulo-fin{
+    margin-top: 85px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+#fondo-final button {
+    margin-left: 320px;
+    margin-bottom: 80px;
+}

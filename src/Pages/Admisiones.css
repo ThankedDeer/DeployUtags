@@ -1,0 +1,29 @@
+
+#card{
+
+    background-color: #499bee;
+    width: 500px;
+    height: 500px;
+   padding: 5rem;
+   color: white;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 100px;
+    
+}
+#img{
+    width: 350px;
+    border-radius: 10px;
+    margin-left: -6px;
+    margin-top: 20px;
+}
+#logo {
+    width: 700px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#card p {
+    text-align: center;
+}

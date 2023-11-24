@@ -1,0 +1,282 @@
+    header {
+        background-color: black;
+        padding: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-size: 18px;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    #img2{
+        width: auto; /* Define el ancho deseado para la imagen */
+        height: 80px; /* Mantén la relación de aspecto original */
+        display: block;
+        margin-left: 17%; /* Centra horizontalmente la imagen en la izquierda */
+        margin-right: auto; /* Establece un margen derecho para centrar la imagen en el centro */
+        border: 2px solid white; /* Agrega un borde a la imagen */
+    }
+    #titulo{
+        background-color: #0C4681; 
+        padding: 20px;
+        p{
+            margin-left: 150px;
+        }
+        .primer-texto {
+            font-size: 25px;
+            color: rgb(255, 255, 255); 
+        }
+        .segundo-texto {
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    #titulo-tres{
+        font-size: 55px;
+        margin-left: 150px;
+        font-family: "Montserrat", sans-serif;
+    }
+    #texto-info{
+        margin-left: 100px;
+        margin-right: 800px;
+        text-align: justify;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+    }
+    #texto3-info{
+        margin-left: 150px;
+        margin-right: 150px;
+        text-align: justify;
+        font-family: "Roboto", sans-serif;
+        font-size: 25px;
+    }
+    #lista-info {
+        li{
+            list-style: square;
+        }
+        margin-left: 200px;
+        list-style: square;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+    }
+    .columnas {
+        flex: 1;
+        padding: 0;
+        list-style: none;
+    }
+    #img-estudiantes{
+        width: 700px;
+        height: 120px;
+        margin-left: 750px;
+        margin-top: -200px;
+    }
+    #info {
+        background-image: url('/public/imagenes/estadias.webp');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+    }
+    .interna{
+        width: 90px;
+        margin-right: 100px;
+    }
+    #info-becas{
+        text-align: center;
+        color: black;
+        font-size: 30px;
+    }
+    #info-interna{
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+    }
+    #fondo-final{
+        background-image: url('/public/imagenes/becas_en-ab.webp');
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+    #titulo-img {
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    #fondo-final img{
+        width: 85px;
+        margin-left: 350px;
+        margin-top: 100px;
+    }
+    #texto1{
+        color: #fff;
+        margin-left: 280px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    #texto2{
+        color: #fff;
+        margin-top: -40px;
+        margin-left: 750px;
+        font-size: 16px;
+    }
+    #texto3{
+        color: #fff;
+        margin-top: -40px;
+        margin-left: 1195px;
+        font-size: 16px;
+    }
+    footer{
+        background-color: #000;
+        margin-top: -16px;
+        height: 100px;
+    }
+
+    #fondo-final a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+    /* Estilo para la sección de carrusel */
+    #carrusel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px; /* Ajusta la altura según tus necesidades */
+        background-color: white;
+        overflow: hidden;
+        margin: 0 5px;
+    }
+    /* Estilo para los elementos del carrusel (imágenes) */
+    .slider-item {
+        width: 15%;
+        max-width: auto; /* Ancho máximo de la imagen */
+        height: auto;
+        margin: 0 0px; /* Espacio entre las imágenes */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+        transform: scale(0.9); /* Escala inicial más pequeña */
+        transition: transform 0.3s ease;
+    }
+
+    /* Estilo para el efecto de hover en las imágenes */
+    .slider-item:hover {
+        transform: scale(1); /* Efecto de zoom al pasar el mouse */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+        z-index: 1;
+    }
+
+    /* Estilo para eliminar los puntos de lista de las imágenes */
+    #carrusel {
+        list-style: none;
+    }
+
+    /* Estilo para eliminar el margen predeterminado de las imágenes */
+    .slider-item {
+        margin: 0;
+    }
+
+    .two-column-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px; /* Espacio entre las dos columnas */
+    }
+    
+    .internaa {
+        background-color: #0C4681;
+        padding: 20px;
+        border: 1px solid #0C4681;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 20%;
+    }
+    
+    .internaa h3 {
+        font-size: 30px;
+        margin: 10px 0;
+        color: black;
+    }
+    
+    #info-interna {
+        background-color: white;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 10px 0;
+        text-align: left;
+    }
+    
+    #info-interna ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: #000;
+    }
+    
+    #info-interna li {
+        font-size: 20px;
+        margin: 5px 0;
+        color:black;
+    }
+    
+    #info-interna a {
+        color: #0C4681;
+        text-decoration: none;
+    }
+    
+    #interna {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Establecer el diseño de tres columnas en el footer */
+    footer .three-column-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        }
+        
+        /* Establecer el ancho de cada columna */
+        footer .columnn {
+        width: 30%; /* Ajusta el ancho de las columnas según tus necesidades */
+        padding: 10px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        margin: 10px 0; /* Margen exterior superior e inferior */
+        }
+        
+        /* Estilo para el contenido de las columnas */
+        footer .columnn p {
+        margin: 0; /* Elimina el margen superior e inferior de los párrafos */
+        text-align: center; /* Centra el texto horizontalmente */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        /* Establecer el ancho de cada columna */
+        .objetivo-column {
+        width: 50%; /* Ajusta según tus necesidades y agrega margen si es necesario */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        padding: 10px 0;
+        align-items: center;
+        margin-left: 5%;
+        }
+        .contacto-column {
+        width: 50%; /* Ajusta según tus necesidades y agrega margen si es necesario */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        }
+    

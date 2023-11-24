@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Estadias.css";
 
 function Estadias() {
     return (

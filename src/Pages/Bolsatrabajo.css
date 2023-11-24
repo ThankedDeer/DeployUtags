@@ -1,0 +1,154 @@
+
+    header {
+        background-color: black;
+        padding: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-size: 18px;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        color: black;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    } 
+        #intro {
+        padding: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        height: 300px;
+        color: black;
+        padding: auto;
+        display:block;
+        align-items: center;
+        background-image: url(/public/imagenes/estadias.webp);
+        } 
+        #intro h1,h4 {
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15%;
+        }
+        #img2{
+        width: auto; /* Define el ancho deseado para la imagen */
+        height: 80px; /* Mantén la relación de aspecto original */
+        display: block;
+        margin-left: 17%; /* Centra horizontalmente la imagen en la izquierda */
+        margin-right: auto; /* Establece un margen derecho para centrar la imagen en el centro */
+        border: 2px solid white; /* Agrega un borde a la imagen */
+        }
+        #img3{
+        width: auto; /* Define el ancho deseado para la imagen */
+        height: 20px; /* Mantén la relación de aspecto original */
+        margin-right: auto; /* Establece un margen derecho para centrar la imagen en el centro */
+        border: 2px solid darkBlue; /* Agrega un borde a la imagen */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        a img {
+        transition: transform 0.3s;
+        }
+        
+        /* Cuando el cursor pasa por encima de la imagen, la imagen se escalará ligeramente */
+        a:hover img {
+        transform: scale(1.1);
+        }
+        /* Establecer el diseño de dos columnas */
+        .two-column-container {
+        display: flex;
+        justify-content: space-between;
+        }
+        
+        /* Establecer el diseño de dos columnas */
+        .two-column-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Alinea las columnas en la parte superior */
+        }
+        
+        /* Establecer el ancho de cada columna */
+        .column {
+        width: 48%; /* Ajusta según tus necesidades y agrega margen si es necesario */
+        }
+        
+        /* Estilo para las imágenes en la columna */
+        .column img {
+        max-width: 80%; /* Ajusta el ancho máximo de las imágenes al 100% de su contenedor */
+        height: auto; /* Mantiene la proporción de aspecto original de las imágenes */
+        display: block; /* Elimina el espacio en blanco debajo de las imágenes */
+        margin-bottom: 0px; /* Agrega un espacio entre las imágenes */
+        margin-left: 15%;
+        }
+        #info{
+        background-color: whitesmoke;
+        height: auto;
+        padding: 10px 20px;
+        margin-right: 5%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        /* Estilos para la clase 'trabajos' */
+        .trabajos {
+        background-color: white; /* Color de fondo */
+        padding: 20px; /* Espaciado interno */
+        border: 1px solid #ddd; /* Borde del contenedor */
+        border-radius: 5px; /* Bordes redondeados */
+        margin: 15px 0; /* Margen exterior superior e inferior */
+        text-align: justify;
+        margin-right: 10%;
+        }
+        
+        /* Estilos para los títulos y elementos de la lista */
+        .trabajos h2 {
+        font-size: 19px; /* Tamaño de fuente para el título principal */
+        margin: 0; /* Elimina el margen superior e inferior */
+        }
+        
+        .trabajos h4 {
+        font-size: 14px; /* Tamaño de fuente para los subtítulos */
+        margin: 0; /* Elimina el margen superior e inferior */
+        }
+        
+        .trabajos li {
+        list-style: circle; /* Cambia el estilo de la lista */
+        margin: 5px 0; /* Espaciado entre elementos de la lista */
+        }
+        
+        .trabajos p {
+        margin: 5px 0; /* Espaciado entre párrafos */
+        }
+        /* styles.css */
+    a {
+        text-decoration: none; /* Quita la subrayado por defecto en los enlaces */
+        color: inherit; /* Hereda el color del texto de su elemento padre */
+    }
+    
+    /* O puedes establecer un color específico si lo deseas */
+    a {
+        text-decoration: none;
+        color: #000; /* Cambia el color a negro */
+    }
+        /* Establecer el ancho de cada columna */
+        .objetivo-column {
+        width: 50%; /* Ajusta según tus necesidades y agrega margen si es necesario */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        padding: 10px 0;
+        align-items: center;
+        margin-left: 5%;
+        }
+        .contacto-column {
+        width: 50%; /* Ajusta según tus necesidades y agrega margen si es necesario */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        }
