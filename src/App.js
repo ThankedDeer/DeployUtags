@@ -5,6 +5,8 @@ import Bolsa from "./Pages/Bolsatrabajo";
 import Exito from "./Pages/exito";
 import Inter from "./Pages/Inter";
 import Vacantes from "./Pages/Vacantes";
+import Becas from "./Pages/Becas";
+import TSU from "./Pages/TSU";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
@@ -22,6 +24,8 @@ function App() {
         <Route path="/exito" element={<Exito/>} />
         <Route path="/inter" element={<Inter/>} />
         <Route path="/vacantes" element={<Vacantes/>} />
+        <Route path="/tsu" element={<TSU/>} />
+        <Route path="/becas" element={<Becas/>} />
       </Routes>
 
       <footer>
